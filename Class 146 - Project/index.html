@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>CLASS 146</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene background = "color: black">
+            <!--camera-->
+            <a-entity position = "0 0 15">
+                <a-camera></a-camera>
+            </a-entity>
+            <!--legs-->
+            <a-entity>
+                <a-box position = "0 0 0" height = 2 color = "#FFA500"></a-box>
+            </a-entity>
+            <a-entity>
+                <a-box position = "2 0 0" height = 2 color = "#FFA500"></a-box>
+            </a-entity>
+            <!--body-->
+            <a-entity>
+                <a-box position = "1 3 0" height = 4 width = 4 color = "green"></a-box>
+            </a-entity>
+            <!--neck and head-->
+            <a-entity>
+                <a-box position = "1 5.5 0" height = 1 width = 0.5 color = "red"></a-box>
+            </a-entity>
+            <a-entity>
+                <a-box position = "1 6.5 0" height = 2 width = 2 color = "white"></a-box>
+            </a-entity>
+            <!--EYES-->
+            <a-sphere 
+            position = "1.5 6.5 1" radius = 0.2 color = "yellow"
+            animation = "property: position; from: 1.5 6.5 1; to: 1.5 6.7 1; dir: alternate; loop: true; dur: 1000"></a-sphere>
+            
+            <a-sphere 
+            position = "0 6.5 1" radius = 0.2 color = "yellow"
+            animation = "property: position; from: 0.5 6.5 1; to: 0.5 6.7 1; dir: alternate; loop: true; dur: 1000"></a-sphere>
+
+            <!--ANTENNE-->
+            <a-box position = "1 8.5 0" height = 2 width = 0.3 color = "blue"
+            animation = 
+            "property: position; from: 0.5 8.5 0; to: 1.5 8.5 0; dir: alternate; loop: true; dur: 1000;"></a-box>
+           
+        </a-scene>
+    </body>
+</html>
